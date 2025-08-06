@@ -58,7 +58,7 @@
         th, td {
             border: 1px solid #ddd !important;
             padding: 8px !important;
-            text-align: center !important;
+            text-align: left !important;
             width: 25% !important;
             word-wrap: break-word;
             vertical-align: middle !important;
@@ -67,6 +67,20 @@
             max-height: auto;
             box-sizing: border-box !important;
             overflow: hidden;
+        }
+        
+        /* Numbers and formula cells stay center */
+        .formula-cell,
+        td:nth-child(2), /* Amount columns */
+        td:nth-child(3), /* Percentage/Type columns when they contain numbers */
+        input[type="number"] {
+            text-align: center !important;
+        }
+        
+        /* Input cells that contain numbers */
+        .input-cell {
+            text-align: center !important;
+            background-color: #ecf0f1 !important;
         }
         
         /* Specific column widths for different table types */
@@ -97,6 +111,7 @@
             font-size: 0.75em !important;
             height: 45px !important;
             line-height: 1.2;
+            text-align: center !important;
         }
         
         .input-cell {
@@ -132,6 +147,7 @@
         input[type="text"] {
             width: 80% !important;
             max-width: 100px !important;
+            text-align: left !important;
         }
         
         .profit-positive {
@@ -151,6 +167,11 @@
             font-weight: bold !important;
             font-size: 0.9em !important;
             border: 1px solid #dee2e6 !important;
+        }
+        
+        .breakdown {
+            background-color: #f8f9fa !important;
+            text-align: left !important;
         }
         
         .verification {
