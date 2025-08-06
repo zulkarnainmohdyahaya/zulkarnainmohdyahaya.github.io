@@ -145,11 +145,12 @@
         }
         
         .section-title {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            font-weight: bold;
-            font-size: 0.9em;
+            background-color: #f8f9fa !important;
+            color: #000000 !important;
+            text-align: center !important;
+            font-weight: bold !important;
+            font-size: 0.9em !important;
+            border: 1px solid #dee2e6 !important;
         }
         
         .verification {
