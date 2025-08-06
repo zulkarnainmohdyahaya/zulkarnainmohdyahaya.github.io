@@ -51,12 +51,18 @@
             border-collapse: collapse;
             margin-bottom: 15px;
             font-size: 0.85em;
+            table-layout: fixed;
         }
         
         th, td {
             border: 1px solid #ddd;
-            padding: 6px;
+            padding: 8px;
             text-align: center;
+            width: 25%;
+            word-wrap: break-word;
+            vertical-align: middle;
+            height: auto;
+            min-height: 40px;
         }
         
         th {
@@ -84,16 +90,19 @@
         }
         
         input {
-            width: 70px;
-            padding: 4px;
+            width: 80%;
+            max-width: 80px;
+            padding: 6px;
             border: 1px solid #ccc;
             border-radius: 4px;
             text-align: center;
             font-size: 0.9em;
+            box-sizing: border-box;
         }
         
         input[type="text"] {
-            width: 100px;
+            width: 90%;
+            max-width: 120px;
         }
         
         .profit-positive {
@@ -267,21 +276,26 @@
             }
             
             th, td {
-                padding: 4px;
+                padding: 6px;
+                min-height: 35px;
+                font-size: 0.85em;
             }
             
             th {
                 font-size: 0.7em;
+                padding: 8px 4px;
             }
             
             input {
-                width: 60px;
+                width: 75%;
+                max-width: 60px;
                 font-size: 0.8em;
-                padding: 3px;
+                padding: 4px;
             }
             
             input[type="text"] {
-                width: 80px;
+                width: 85%;
+                max-width: 80px;
             }
             
             .toggle-switch {
@@ -319,16 +333,26 @@
             }
             
             th, td {
-                padding: 3px;
+                padding: 4px;
+                min-height: 30px;
+                font-size: 0.8em;
+            }
+            
+            th {
+                font-size: 0.65em;
+                padding: 6px 2px;
             }
             
             input {
-                width: 50px;
+                width: 70%;
+                max-width: 50px;
                 font-size: 0.75em;
+                padding: 3px;
             }
             
             input[type="text"] {
-                width: 70px;
+                width: 80%;
+                max-width: 70px;
             }
             
             .toggle-container {
