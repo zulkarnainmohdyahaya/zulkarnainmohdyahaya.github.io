@@ -449,7 +449,7 @@
             </tr>
             <tr>
                 <td>Product Name</td>
-                <td class="input-cell"><input type="text" id="productName" value="Perfume Pheromone" style="width: 150px;"></td>
+                <td class="input-cell"><input type="text" id="productName" value="Product Name" style="width: 150px;"></td>
                 <td>INPUT</td>
                 <td>Your product name</td>
             </tr>
