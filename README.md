@@ -47,62 +47,91 @@
         }
         
         table {
-            width: 100%;
-            border-collapse: collapse;
+            width: 100% !important;
+            border-collapse: collapse !important;
             margin-bottom: 15px;
             font-size: 0.85em;
-            table-layout: fixed;
+            table-layout: fixed !important;
+            max-width: 100%;
         }
         
         th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-            width: 25%;
+            border: 1px solid #ddd !important;
+            padding: 8px !important;
+            text-align: center !important;
+            width: 25% !important;
             word-wrap: break-word;
-            vertical-align: middle;
-            height: auto;
-            min-height: 40px;
+            vertical-align: middle !important;
+            height: 45px !important;
+            min-height: 45px !important;
+            max-height: auto;
+            box-sizing: border-box !important;
+            overflow: hidden;
+        }
+        
+        /* Specific column widths for different table types */
+        table tr th:nth-child(1),
+        table tr td:nth-child(1) {
+            width: 30% !important;
+        }
+        
+        table tr th:nth-child(2),
+        table tr td:nth-child(2) {
+            width: 25% !important;
+        }
+        
+        table tr th:nth-child(3),
+        table tr td:nth-child(3) {
+            width: 25% !important;
+        }
+        
+        table tr th:nth-child(4),
+        table tr td:nth-child(4) {
+            width: 20% !important;
         }
         
         th {
-            background-color: #3498db;
-            color: white;
-            font-weight: bold;
-            font-size: 0.8em;
+            background-color: #3498db !important;
+            color: white !important;
+            font-weight: bold !important;
+            font-size: 0.75em !important;
+            height: 45px !important;
+            line-height: 1.2;
         }
         
         .input-cell {
-            background-color: #ecf0f1;
+            background-color: #ecf0f1 !important;
         }
         
         .formula-cell {
-            background-color: #e8f5e8;
+            background-color: #e8f5e8 !important;
         }
         
         .highlight {
-            background-color: #fff3cd;
-            font-weight: bold;
+            background-color: #fff3cd !important;
+            font-weight: bold !important;
         }
         
         .breakdown {
-            background-color: #f8f9fa;
+            background-color: #f8f9fa !important;
         }
         
         input {
-            width: 80%;
-            max-width: 80px;
-            padding: 6px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            text-align: center;
-            font-size: 0.9em;
-            box-sizing: border-box;
+            width: 70% !important;
+            max-width: 70px !important;
+            padding: 4px !important;
+            border: 1px solid #ccc !important;
+            border-radius: 4px !important;
+            text-align: center !important;
+            font-size: 0.8em !important;
+            box-sizing: border-box !important;
+            margin: 0 auto !important;
+            display: block !important;
         }
         
         input[type="text"] {
-            width: 90%;
-            max-width: 120px;
+            width: 80% !important;
+            max-width: 100px !important;
         }
         
         .profit-positive {
@@ -252,115 +281,117 @@
             background-color: #f0f8ff;
         }
         
-        /* Mobile Responsive */
+        /* Mobile Responsive with !important for GitHub compatibility */
         @media (max-width: 768px) {
             body {
-                padding: 5px;
+                padding: 5px !important;
             }
             
             .container {
-                padding: 10px;
-                margin-bottom: 10px;
+                padding: 8px !important;
+                margin-bottom: 10px !important;
             }
             
             .header h1 {
-                font-size: 1.3em;
+                font-size: 1.2em !important;
             }
             
             .header p {
-                font-size: 0.8em;
+                font-size: 0.75em !important;
             }
             
             table {
-                font-size: 0.75em;
+                font-size: 0.7em !important;
+                margin-bottom: 10px !important;
             }
             
             th, td {
-                padding: 6px;
-                min-height: 35px;
-                font-size: 0.85em;
+                padding: 4px !important;
+                height: 35px !important;
+                min-height: 35px !important;
+                font-size: 0.75em !important;
+                line-height: 1.1 !important;
             }
             
             th {
-                font-size: 0.7em;
-                padding: 8px 4px;
+                font-size: 0.65em !important;
+                padding: 4px 2px !important;
+                height: 35px !important;
             }
             
             input {
-                width: 75%;
-                max-width: 60px;
-                font-size: 0.8em;
-                padding: 4px;
+                width: 60% !important;
+                max-width: 50px !important;
+                font-size: 0.7em !important;
+                padding: 3px !important;
             }
             
             input[type="text"] {
-                width: 85%;
-                max-width: 80px;
+                width: 70% !important;
+                max-width: 70px !important;
             }
             
             .toggle-switch {
-                width: 40px;
-                height: 24px;
+                width: 35px !important;
+                height: 20px !important;
             }
             
             .slider:before {
-                height: 16px;
-                width: 16px;
+                height: 14px !important;
+                width: 14px !important;
             }
             
             input:checked + .slider:before {
-                transform: translateX(16px);
+                transform: translateX(15px) !important;
             }
             
             .reference-links {
-                font-size: 9px;
+                font-size: 8px !important;
             }
             
             .fee-note {
-                font-size: 9px;
-                padding: 4px;
+                font-size: 8px !important;
+                padding: 3px !important;
             }
         }
         
-        /* Extra Small Mobile */
+        /* Extra Small Mobile with !important */
         @media (max-width: 480px) {
             .header h1 {
-                font-size: 1.1em;
+                font-size: 1em !important;
             }
             
             table {
-                font-size: 0.7em;
+                font-size: 0.65em !important;
             }
             
             th, td {
-                padding: 4px;
-                min-height: 30px;
-                font-size: 0.8em;
+                padding: 3px !important;
+                height: 30px !important;
+                min-height: 30px !important;
+                font-size: 0.7em !important;
             }
             
             th {
-                font-size: 0.65em;
-                padding: 6px 2px;
+                font-size: 0.6em !important;
+                padding: 3px 1px !important;
+                height: 30px !important;
             }
             
             input {
-                width: 70%;
-                max-width: 50px;
-                font-size: 0.75em;
-                padding: 3px;
+                width: 55% !important;
+                max-width: 45px !important;
+                font-size: 0.65em !important;
+                padding: 2px !important;
             }
             
             input[type="text"] {
-                width: 80%;
-                max-width: 70px;
-            }
-            
-            .toggle-container {
-                gap: 5px;
+                width: 65% !important;
+                max-width: 60px !important;
             }
             
             .input-mode-label {
-                font-size: 0.75em;
+                font-size: 0.7em !important;
             }
         }
         
